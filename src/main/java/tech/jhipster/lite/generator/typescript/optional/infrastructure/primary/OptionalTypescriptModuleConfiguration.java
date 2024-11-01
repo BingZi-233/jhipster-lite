@@ -17,7 +17,7 @@ class OptionalTypescriptModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(OPTIONAL_TYPESCRIPT)
       .withoutProperties()
-      .apiDoc("Typescript", "Add Optional class domain to project")
+      .apiDoc("Typescript", "将可选类域添加到项目中")
       .organization(JHipsterModuleOrganization.builder().addDependency(TYPESCRIPT).build())
       .tags("typescript")
       .factory(optionalTypescriptApplicationService::buildModule);

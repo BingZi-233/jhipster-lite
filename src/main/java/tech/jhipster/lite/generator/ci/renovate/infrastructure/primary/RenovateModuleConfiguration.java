@@ -20,7 +20,7 @@ class RenovateModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(RENOVATE)
       .withoutProperties()
-      .apiDoc("Dependencies updates", "Add Renovate for automatic dependency updates")
+      .apiDoc("Dependencies updates", "添加Renovate以实现自动依赖更新")
       .organization(JHipsterModuleOrganization.builder().feature(JHLiteFeatureSlug.DEPENDENCIES_UPDATES).build())
       .tags(CI_TAG, RENOVATE_TAG)
       .factory(renovateApplicationService::buildRenovateModule);

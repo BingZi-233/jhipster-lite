@@ -20,7 +20,7 @@ class SpringBootWebfluxModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SPRING_BOOT_WEBFLUX_EMPTY)
       .propertiesDefinition(properties())
-      .apiDoc("Spring Boot - Webflux", "Empty module: do not use alone. You should add module Spring Boot Webflux Netty")
+      .apiDoc("Spring Boot - Webflux", "空模块：请勿单独使用。您应该添加模块Spring Boot Webflux Netty")
       .organization(JHipsterModuleOrganization.builder().feature(SPRING_SERVER).addDependency(SPRING_BOOT).build())
       .tags("server", "webflux", "netty")
       .factory(webflux::buildEmptyModule);
@@ -31,7 +31,7 @@ class SpringBootWebfluxModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SPRING_BOOT_WEBFLUX_NETTY)
       .propertiesDefinition(properties())
-      .apiDoc("Spring Boot - Webflux", "Add Spring Boot Webflux Netty")
+      .apiDoc("Spring Boot - Webflux", "添加Spring Boot Webflux Netty")
       .organization(JHipsterModuleOrganization.builder().addDependency(SPRING_BOOT_WEBFLUX_EMPTY).build())
       .tags("server", "webflux")
       .factory(webflux::buildNettyModule);

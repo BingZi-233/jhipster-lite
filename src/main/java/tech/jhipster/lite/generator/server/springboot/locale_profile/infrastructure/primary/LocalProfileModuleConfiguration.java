@@ -24,7 +24,7 @@ class LocalProfileModuleConfiguration {
           .addSpringConfigurationFormat()
           .build()
       )
-      .apiDoc("Spring Boot", "Use Spring local profile by default for development.")
+      .apiDoc("Spring Boot", "默认使用Spring本地配置文件进行开发。")
       .organization(JHipsterModuleOrganization.SPRINGBOOT_DEPENDENCY)
       .tags("server", "spring", "spring-boot", "dx")
       .factory(localProfile::buildModule);

@@ -18,7 +18,7 @@ class PaginationDomainModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(PAGINATION_DOMAIN)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().build())
-      .apiDoc("Pagination", "Add domain model for pagination management")
+      .apiDoc("Pagination", "添加用于分页管理的领域模型")
       .organization(JHipsterModuleOrganization.builder().addDependency(JAVA_BASE).build())
       .tags("server")
       .factory(paginationDomain::buildModule);

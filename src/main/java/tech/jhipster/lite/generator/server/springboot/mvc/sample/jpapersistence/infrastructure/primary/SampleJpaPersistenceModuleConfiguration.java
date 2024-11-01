@@ -20,7 +20,7 @@ class SampleJpaPersistenceModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SAMPLE_JPA_PERSISTENCE)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().build())
-      .apiDoc("Sample Feature", "Add JPA persistence for sample feature")
+      .apiDoc("Sample Feature", "为示例功能添加JPA持久性")
       .organization(
         JHipsterModuleOrganization.builder()
           .feature(SAMPLE_PERSISTENCE)

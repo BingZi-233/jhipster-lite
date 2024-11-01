@@ -17,7 +17,7 @@ class CheckstyleModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(CHECKSTYLE)
       .withoutProperties()
-      .apiDoc("Java", "Add Checkstyle configuration to enforce code style rules")
+      .apiDoc("Java", "添加Checkstyle配置以强制执行代码风格规则")
       .organization(JHipsterModuleOrganization.builder().addDependency(JAVA_BUILD_TOOL).build())
       .tags("server", "tools", "checkstyle")
       .factory(checkstyle::buildModule);

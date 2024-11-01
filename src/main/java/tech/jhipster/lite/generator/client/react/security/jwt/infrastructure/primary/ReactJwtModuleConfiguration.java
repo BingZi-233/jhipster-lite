@@ -18,7 +18,7 @@ class ReactJwtModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(REACT_JWT)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addIndentation().build())
-      .apiDoc("Frontend - React", "Add JWT Login React")
+      .apiDoc("Frontend - React", "添加JWT登录React")
       .organization(JHipsterModuleOrganization.builder().addDependency(REACT_CORE).build())
       .tags("client", "react", "jwt")
       .factory(reactJwt::buildModule);

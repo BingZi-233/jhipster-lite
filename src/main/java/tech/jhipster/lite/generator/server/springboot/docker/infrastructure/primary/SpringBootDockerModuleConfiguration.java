@@ -30,7 +30,7 @@ class SpringBootDockerModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JIB)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().addServerPort().build())
-      .apiDoc(SPRING_BOOT_TOOLS_GROUP, "Add Docker image building with Jib")
+      .apiDoc(SPRING_BOOT_TOOLS_GROUP, "添加使用Jib构建Docker镜像")
       .organization(JHipsterModuleOrganization.builder().addDependency(JAVA_BUILD_TOOL).build())
       .tags(SERVER_TAG, SPRING_TAG, SPRING_BOOT_TAG, JIB_TAG)
       .factory(springBootDocker::buildJibModule);
@@ -41,7 +41,7 @@ class SpringBootDockerModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(DOCKERFILE_MAVEN)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addServerPort().build())
-      .apiDoc(SPRING_BOOT_TOOLS_GROUP, "Add Dockerfile with maven commands")
+      .apiDoc(SPRING_BOOT_TOOLS_GROUP, "添加带有maven命令的Dockerfile")
       .organization(JHipsterModuleOrganization.builder().feature(DOCKERFILE).addDependency(MAVEN_WRAPPER).build())
       .tags(SERVER_TAG, SPRING_TAG, SPRING_BOOT_TAG, DOCKER_TAG)
       .factory(springBootDocker::buildDockerFileMavenModule);
@@ -52,7 +52,7 @@ class SpringBootDockerModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(DOCKERFILE_GRADLE)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addServerPort().build())
-      .apiDoc(SPRING_BOOT_TOOLS_GROUP, "Add Dockerfile with gradle commands")
+      .apiDoc(SPRING_BOOT_TOOLS_GROUP, "添加带有gradle命令的Dockerfile")
       .organization(JHipsterModuleOrganization.builder().feature(DOCKERFILE).addDependency(GRADLE_WRAPPER).build())
       .tags(SERVER_TAG, SPRING_TAG, SPRING_BOOT_TAG, DOCKER_TAG)
       .factory(springBootDocker::buildDockerFileGradleModule);

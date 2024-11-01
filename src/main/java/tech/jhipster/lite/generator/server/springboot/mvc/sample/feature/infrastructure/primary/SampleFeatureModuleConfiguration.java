@@ -22,7 +22,7 @@ class SampleFeatureModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SAMPLE_FEATURE)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().addProjectBaseName().build())
-      .apiDoc("Sample Feature", "Add sample context with some APIs")
+      .apiDoc("Sample Feature", "添加一些API的示例上下文")
       .organization(
         JHipsterModuleOrganization.builder()
           .addDependency(CUCUMBER_AUTHENTICATION)

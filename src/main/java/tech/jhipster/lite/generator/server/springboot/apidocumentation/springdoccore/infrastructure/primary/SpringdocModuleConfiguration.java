@@ -28,7 +28,7 @@ class SpringdocModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SPRINGDOC_MVC_OPENAPI)
       .propertiesDefinition(buildPropertiesDefinition())
-      .apiDoc(API_GROUP, "Add springdoc-openapi for spring MVC")
+      .apiDoc(API_GROUP, "为spring MVC添加springdoc-openapi")
       .organization(JHipsterModuleOrganization.builder().feature(SPRINGDOC).addDependency(SPRING_MVC_SERVER).build())
       .tags(SERVER_TAG, SPRING_TAG, SPRING_BOOT_TAG, DOCUMENTATION_TAG, SWAGGER_TAG)
       .factory(springdocApplicationService::buildSpringdocMvcModule);
@@ -39,7 +39,7 @@ class SpringdocModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SPRINGDOC_WEBFLUX_OPENAPI)
       .propertiesDefinition(buildPropertiesDefinition())
-      .apiDoc(API_GROUP, "Add springdoc-openapi for webflux")
+      .apiDoc(API_GROUP, "为webflux添加springdoc-openapi")
       .organization(JHipsterModuleOrganization.builder().feature(SPRINGDOC).addDependency(SPRING_BOOT_WEBFLUX_NETTY).build())
       .tags(SERVER_TAG, SPRING_TAG, SPRING_BOOT_TAG, DOCUMENTATION_TAG, SWAGGER_TAG)
       .factory(springdocApplicationService::buildSpringdocWebfluxModule);

@@ -19,7 +19,7 @@ class ReactI18nModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(REACT_I18N)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().build())
-      .apiDoc("Frontend - React", "Add react internationalization")
+      .apiDoc("Frontend - React", "添加React国际化")
       .organization(JHipsterModuleOrganization.builder().feature(CLIENT_INTERNATIONALIZATION).addDependency(REACT_CORE).build())
       .tags("client", "react", "i18n")
       .factory(i18n::buildModule);

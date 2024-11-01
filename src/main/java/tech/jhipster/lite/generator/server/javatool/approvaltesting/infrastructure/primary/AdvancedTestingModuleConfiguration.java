@@ -17,7 +17,7 @@ class AdvancedTestingModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JHLiteModuleSlug.APPROVAL_TESTS)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().build())
-      .apiDoc("Advanced testing", "Add ApprovalTests library for Approval testing")
+      .apiDoc("Advanced testing", "添加ApprovalTests库以进行Approval测试")
       .organization(JHipsterModuleOrganization.builder().addDependency(JHLiteFeatureSlug.JAVA_BUILD_TOOL).build())
       .tags("server", "testing")
       .factory(approvalTesting::build);

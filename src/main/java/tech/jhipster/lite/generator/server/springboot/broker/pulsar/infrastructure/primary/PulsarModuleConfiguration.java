@@ -20,7 +20,7 @@ class PulsarModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().addSpringConfigurationFormat().build()
       )
-      .apiDoc("Spring Boot - Broker", "Add Pulsar dependencies, with testcontainers")
+      .apiDoc("Spring Boot - Broker", "添加Pulsar依赖项，使用testcontainers")
       .organization(JHipsterModuleOrganization.builder().addDependency(SPRING_BOOT).build())
       .tags("server", "spring", "spring-boot", "broker")
       .factory(pulsar::buildModule);

@@ -16,7 +16,7 @@ class InternationalizedErrorsModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JHLiteModuleSlug.INTERNATIONALIZED_ERRORS)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().build())
-      .apiDoc("Spring Boot", "Add internationalization for application errors")
+      .apiDoc("Spring Boot", "为应用程序错误添加国际化")
       .organization(
         JHipsterModuleOrganization.builder()
           .addDependency(JHLiteModuleSlug.JAVA_ENUMS)

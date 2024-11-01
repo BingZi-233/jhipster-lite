@@ -22,7 +22,7 @@ class CucumberAuthenticationModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SPRING_BOOT_CUCUMBER_OAUTH_2_AUTHENTICATION)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().addIndentation().build())
-      .apiDoc("Spring Boot - Component Tests", "Add OAuth2 authentication steps for cucumber")
+      .apiDoc("Spring Boot - Component Tests", "为cucumber添加OAuth2认证步骤")
       .organization(
         JHipsterModuleOrganization.builder()
           .feature(CUCUMBER_AUTHENTICATION)
@@ -39,7 +39,7 @@ class CucumberAuthenticationModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SPRING_BOOT_CUCUMBER_JWT_AUTHENTICATION)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().build())
-      .apiDoc("Spring Boot - Component Tests", "Add JWT authentication steps for cucumber")
+      .apiDoc("Spring Boot - Component Tests", "为cucumber添加JWT认证步骤")
       .organization(
         JHipsterModuleOrganization.builder()
           .feature(CUCUMBER_AUTHENTICATION)

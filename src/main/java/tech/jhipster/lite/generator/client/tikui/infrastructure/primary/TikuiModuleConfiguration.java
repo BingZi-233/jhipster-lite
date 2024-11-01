@@ -17,7 +17,7 @@ class TikuiModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(TIKUI)
       .withoutProperties()
-      .apiDoc("Frontend", "Add Tikui, a pattern library to build your styles")
+      .apiDoc("Frontend", "添加Tikui，一个用于构建样式的模式库")
       .organization(JHipsterModuleOrganization.builder().addDependency(CLIENT_CORE).build())
       .tags("client", "frontend", "tikui")
       .factory(tikui::buildModule);

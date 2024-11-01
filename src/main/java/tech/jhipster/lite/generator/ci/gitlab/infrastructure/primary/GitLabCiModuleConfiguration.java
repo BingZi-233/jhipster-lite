@@ -24,7 +24,7 @@ class GitLabCiModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(GITLAB_CI_MAVEN)
       .withoutProperties()
-      .apiDoc(CONTINUOUS_INTEGRATION_GROUP_DOC, "Add GitLab CI for Maven Build")
+      .apiDoc(CONTINUOUS_INTEGRATION_GROUP_DOC, "为Maven构建添加GitLab CI")
       .organization(JHipsterModuleOrganization.builder().feature(GITLAB_CI).addDependency(MAVEN_JAVA).build())
       .tags(CI_TAG, GITLAB_TAG)
       .factory(gitlabCi::buildGitLabCiMavenModule);
@@ -35,7 +35,7 @@ class GitLabCiModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(GITLAB_CI_GRADLE)
       .withoutProperties()
-      .apiDoc(CONTINUOUS_INTEGRATION_GROUP_DOC, "Add GitLab CI for Gradle Build")
+      .apiDoc(CONTINUOUS_INTEGRATION_GROUP_DOC, "为Gradle构建添加GitLab CI")
       .organization(JHipsterModuleOrganization.builder().feature(GITLAB_CI).addDependency(GRADLE_JAVA).build())
       .tags(CI_TAG, GITLAB_TAG)
       .factory(gitlabCi::buildGitLabCiGradleModule);

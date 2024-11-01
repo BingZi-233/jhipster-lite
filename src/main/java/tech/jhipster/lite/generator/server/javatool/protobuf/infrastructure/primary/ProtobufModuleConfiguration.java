@@ -16,7 +16,7 @@ class ProtobufModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JHLiteModuleSlug.PROTOBUF)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().build())
-      .apiDoc("Java", "Add protobuf support")
+      .apiDoc("Java", "添加protobuf支持")
       .organization(JHipsterModuleOrganization.builder().addDependency(JHLiteModuleSlug.JAVA_BASE).build())
       .tags("server", "protobuf")
       .factory(protobuf::buildProtobufModule);
@@ -27,7 +27,7 @@ class ProtobufModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JHLiteModuleSlug.PROTOBUF_BACKWARDS_COMPATIBILITY_CHECK)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().build())
-      .apiDoc("Java", "Add protobuf backwards compatibility check")
+      .apiDoc("Java", "添加protobuf向后兼容性检查")
       .organization(
         JHipsterModuleOrganization.builder().addDependency(JHLiteModuleSlug.PROTOBUF).addDependency(JHLiteModuleSlug.MAVEN_JAVA).build()
       )

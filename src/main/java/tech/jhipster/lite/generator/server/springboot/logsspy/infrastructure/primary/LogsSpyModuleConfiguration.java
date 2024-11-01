@@ -18,7 +18,7 @@ class LogsSpyModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(LOGS_SPY)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().addIndentation().build())
-      .apiDoc("Spring Boot", "Add LogsSpy JUnit5 extension to project")
+      .apiDoc("Spring Boot", "将LogsSpy JUnit5扩展添加到项目中")
       .organization(JHipsterModuleOrganization.builder().addDependency(SPRING_SERVER).build())
       .tags("server", "test", "logback", "junit-extension")
       .factory(logSpy::buildModule);

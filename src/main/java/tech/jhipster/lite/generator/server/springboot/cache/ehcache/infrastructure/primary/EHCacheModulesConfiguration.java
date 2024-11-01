@@ -23,7 +23,7 @@ class EHCacheModulesConfiguration {
     return JHipsterModuleResource.builder()
       .slug(EHCACHE_JAVA_CONFIG)
       .propertiesDefinition(properties())
-      .apiDoc("Spring Boot - Cache", "Add Ehcache with Java configuration")
+      .apiDoc("Spring Boot - Cache", "使用Java配置添加Ehcache")
       .organization(organization())
       .tags("server", "spring", SPRING_BOOT_TAG, CACHE_TAG)
       .factory(ehCaches::buildJavaConfigurationModule);
@@ -34,7 +34,7 @@ class EHCacheModulesConfiguration {
     return JHipsterModuleResource.builder()
       .slug(EHCACHE_XML_CONFIG)
       .propertiesDefinition(properties())
-      .apiDoc("Spring Boot - Cache", "Add Ehcache with XML configuration")
+      .apiDoc("Spring Boot - Cache", "添加带有XML配置的Ehcache")
       .organization(organization())
       .tags("server", "spring", SPRING_BOOT_TAG, CACHE_TAG)
       .factory(ehCaches::buildXmlConfigurationModule);

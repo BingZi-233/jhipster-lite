@@ -24,7 +24,7 @@ class JpaModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JPA_POSTGRESQL)
       .propertiesDefinition(properties())
-      .apiDoc(API_DOC_GROUP, "Add JPA with Postgresql to project")
+      .apiDoc(API_DOC_GROUP, "将JPA与Postgresql添加到项目中")
       .organization(organization())
       .tags(tags())
       .factory(postgresql::buildPostgresql);
@@ -35,7 +35,7 @@ class JpaModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JPA_MARIADB)
       .propertiesDefinition(properties())
-      .apiDoc(API_DOC_GROUP, "Add JPA with MariaDB to project")
+      .apiDoc(API_DOC_GROUP, "将JPA与MariaDB添加到项目中")
       .organization(organization())
       .tags(tags())
       .factory(applicationService::buildMariaDB);
@@ -46,7 +46,7 @@ class JpaModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JPA_MYSQL)
       .propertiesDefinition(properties())
-      .apiDoc(API_DOC_GROUP, "Add JPA with MySQL to project")
+      .apiDoc(API_DOC_GROUP, "将JPA与MySQL添加到项目中")
       .organization(organization())
       .tags(tags())
       .factory(applicationService::buildMySQL);
@@ -57,7 +57,7 @@ class JpaModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JPA_MSSQL)
       .propertiesDefinition(properties())
-      .apiDoc(API_DOC_GROUP, "Add JPA with MsSQL to project")
+      .apiDoc(API_DOC_GROUP, "将JPA与MsSQL添加到项目中")
       .organization(organization())
       .tags(tags())
       .factory(applicationService::buildMsSQL);

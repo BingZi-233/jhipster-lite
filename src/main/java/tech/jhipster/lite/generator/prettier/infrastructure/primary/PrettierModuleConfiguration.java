@@ -18,7 +18,7 @@ class PrettierModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(PRETTIER)
       .propertiesDefinition(initPropertiesDefinition())
-      .apiDoc("Prettier", "Format project with prettier")
+      .apiDoc("Prettier", "使用prettier格式化项目")
       .organization(JHipsterModuleOrganization.builder().addDependency(INIT).build())
       .tags("server", "client", "init")
       .factory(prettier::buildModule);

@@ -25,7 +25,7 @@ class JQAssistantModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JQASSISTANT)
       .withoutProperties()
-      .apiDoc(DOCUMENTATION, "Setup jQAssistant for documentation and analysis of the project")
+      .apiDoc(DOCUMENTATION, "为项目设置jQAssistant以进行文档和分析")
       .organization(JHipsterModuleOrganization.builder().addDependency(JHLiteFeatureSlug.JAVA_BUILD_TOOL).build())
       .tags(SERVER_TAG, DOCUMENTATION_TAG)
       .factory(jqassistant::buildModule);
@@ -36,7 +36,7 @@ class JQAssistantModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JQASSISTANT_JMOLECULES)
       .withoutProperties()
-      .apiDoc(DOCUMENTATION, "Add jMolecules support for jQAssistant")
+      .apiDoc(DOCUMENTATION, "为jQAssistant添加jMolecules支持")
       .organization(JHipsterModuleOrganization.builder().addDependency(JQASSISTANT).addDependency(JMOLECULES).build())
       .tags(SERVER_TAG, DOCUMENTATION_TAG)
       .factory(jqassistant::buildJMoleculesModule);
@@ -47,7 +47,7 @@ class JQAssistantModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JQASSISTANT_SPRING)
       .withoutProperties()
-      .apiDoc(DOCUMENTATION, "Add Spring support for jQAssistant")
+      .apiDoc(DOCUMENTATION, "为jQAssistant添加Spring支持")
       .organization(JHipsterModuleOrganization.builder().addDependency(JQASSISTANT).addDependency(SPRING_BOOT).build())
       .tags(SERVER_TAG, DOCUMENTATION_TAG)
       .factory(jqassistant::buildSpringModule);

@@ -18,7 +18,7 @@ class EurekaModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(EUREKA_CLIENT)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addProjectBaseName().addIndentation().build())
-      .apiDoc("Spring Boot - Spring Cloud", "Add Spring Cloud Eureka Client")
+      .apiDoc("Spring Boot - Spring Cloud", "添加Spring Cloud Eureka客户端")
       .organization(JHipsterModuleOrganization.builder().addDependency(SPRING_CLOUD).build())
       .tags("server", "spring", "spring-boot", "cloud")
       .factory(eureka::buildModule);

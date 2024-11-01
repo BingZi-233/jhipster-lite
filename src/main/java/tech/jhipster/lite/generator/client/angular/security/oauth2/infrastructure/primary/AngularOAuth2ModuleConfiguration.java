@@ -19,7 +19,7 @@ class AngularOAuth2ModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(ANGULAR_OAUTH_2)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addIndentation().build())
-      .apiDoc("Frontend - Angular", "Add OAuth2 authentication")
+      .apiDoc("Frontend - Angular", "添加OAuth2认证")
       .organization(JHipsterModuleOrganization.builder().feature(ANGULAR_AUTHENTICATION).addDependency(ANGULAR_CORE).build())
       .tags("client", "angular")
       .factory(angularOAuth2::buildModule);

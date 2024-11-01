@@ -18,7 +18,7 @@ public class LicenseModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(LICENSE_MIT)
       .withoutProperties()
-      .apiDoc("License", "Add MIT license file")
+      .apiDoc("License", "添加MIT许可证文件")
       .organization(JHipsterModuleOrganization.builder().feature(LICENSE).build())
       .tags("init", "license")
       .factory(license::buildMitModule);
@@ -29,7 +29,7 @@ public class LicenseModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(LICENSE_APACHE)
       .withoutProperties()
-      .apiDoc("License", "Add APACHE license file")
+      .apiDoc("License", "添加APACHE许可证文件")
       .organization(JHipsterModuleOrganization.builder().feature(LICENSE).build())
       .tags("init", "license")
       .factory(license::buildApacheModule);

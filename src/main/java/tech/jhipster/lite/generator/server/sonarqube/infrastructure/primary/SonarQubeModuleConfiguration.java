@@ -21,7 +21,7 @@ class SonarQubeModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SONAR_QUBE_JAVA_BACKEND)
       .propertiesDefinition(propertiesDefinition())
-      .apiDoc("Sonar", "Add Sonar configuration for Java Backend to inspect code quality")
+      .apiDoc("Sonar", "为Java后端添加Sonar配置以检查代码质量")
       .organization(
         JHipsterModuleOrganization.builder()
           .feature(SONAR_QUBE_JAVA)
@@ -38,7 +38,7 @@ class SonarQubeModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SONAR_QUBE_JAVA_BACKEND_AND_FRONTEND)
       .propertiesDefinition(propertiesDefinition())
-      .apiDoc("Sonar", "Add Sonar configuration for Java Backend and Frontend to inspect code quality")
+      .apiDoc("Sonar", "为Java后端和前端添加Sonar配置，以检查代码质量")
       .organization(
         JHipsterModuleOrganization.builder()
           .feature(SONAR_QUBE_JAVA)

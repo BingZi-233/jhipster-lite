@@ -16,7 +16,7 @@ class CodespaceModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(GITHUB_CODESPACES)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addServerPort().build())
-      .apiDoc("Development environment", "Init GitHub Codespaces configuration files")
+      .apiDoc("Development environment", "初始化GitHub Codespaces配置文件")
       .standalone()
       .tags("setup", "codespaces")
       .factory(codespaces::buildModule);

@@ -19,7 +19,7 @@ class RestPaginationModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(REST_PAGINATION)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().build())
-      .apiDoc("Pagination", "Add rest models for pagination handling")
+      .apiDoc("Pagination", "添加用于分页处理的REST模型")
       .organization(JHipsterModuleOrganization.builder().addDependency(PAGINATION_DOMAIN).addDependency(SPRINGDOC).build())
       .tags("server")
       .factory(restPagination::buildModule);

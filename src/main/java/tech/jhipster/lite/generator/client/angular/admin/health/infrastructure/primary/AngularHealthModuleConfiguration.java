@@ -18,7 +18,7 @@ class AngularHealthModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(ANGULAR_HEALTH)
       .withoutProperties()
-      .apiDoc("Frontend - Angular", "Angular Health")
+      .apiDoc("Frontend - Angular", "Angular健康")
       .organization(JHipsterModuleOrganization.builder().addDependency(ANGULAR_CORE).addDependency(SPRING_BOOT_ACTUATOR).build())
       .tags("client", "angular", "health")
       .factory(angularHealth::buildModule);

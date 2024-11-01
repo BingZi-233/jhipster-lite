@@ -18,7 +18,7 @@ class VueOAuth2KeycloakModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(VUE_OAUTH2_KEYCLOAK)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addIndentation().build())
-      .apiDoc("Vue", "Add OAuth2 Keycloak authentication to Vue")
+      .apiDoc("Vue", "将OAuth2 Keycloak身份验证添加到Vue")
       .organization(JHipsterModuleOrganization.builder().feature(VUE_AUTHENTICATION).addDependency(VUE_CORE).build())
       .tags("client", "vue", "auth", "oauth2", "keycloak")
       .factory(oauth2Keycloak::buildModule);

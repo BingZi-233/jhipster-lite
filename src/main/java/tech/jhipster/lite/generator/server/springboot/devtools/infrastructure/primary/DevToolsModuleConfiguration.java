@@ -24,7 +24,7 @@ class DevToolsModuleConfiguration {
           .addSpringConfigurationFormat()
           .build()
       )
-      .apiDoc("Spring Boot - Tools", "Add Spring Boot devtools.")
+      .apiDoc("Spring Boot - Tools", "添加Spring Boot开发工具。")
       .organization(JHipsterModuleOrganization.SPRINGBOOT_DEPENDENCY)
       .tags("server", "spring", "spring-boot", "devtools")
       .factory(devtools::buildModule);

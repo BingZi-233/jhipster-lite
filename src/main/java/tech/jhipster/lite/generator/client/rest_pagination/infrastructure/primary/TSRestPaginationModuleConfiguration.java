@@ -17,7 +17,7 @@ class TSRestPaginationModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JHLiteModuleSlug.TS_REST_PAGINATION)
       .withoutProperties()
-      .apiDoc("Pagination", "Add rest pagination to the frontend webapp")
+      .apiDoc("Pagination", "为前端网页应用添加REST分页功能")
       .organization(JHipsterModuleOrganization.builder().addDependency(TS_PAGINATION_DOMAIN).build())
       .tags("client", "webapp", "frontend")
       .factory(tsRestPagination::buildModule);

@@ -19,7 +19,7 @@ class ConsulModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(CONSUL)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addProjectBaseName().build())
-      .apiDoc("Spring Boot - Spring Cloud", "Add Spring Cloud Consul config and discovery")
+      .apiDoc("Spring Boot - Spring Cloud", "添加Spring Cloud Consul配置和发现")
       .organization(JHipsterModuleOrganization.builder().feature(SERVICE_DISCOVERY).addDependency(SPRING_BOOT_ACTUATOR).build())
       .tags("server", "spring", "spring-boot", "cloud")
       .factory(consulApplicationService::buildModule);

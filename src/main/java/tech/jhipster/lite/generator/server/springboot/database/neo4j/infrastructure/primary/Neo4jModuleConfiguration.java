@@ -24,7 +24,7 @@ class Neo4jModuleConfiguration {
           .addSpringConfigurationFormat()
           .build()
       )
-      .apiDoc("Spring Boot - Database", "Add Neo4j drivers and dependencies, with testcontainers")
+      .apiDoc("Spring Boot - Database", "添加Neo4j驱动程序和依赖项，以及测试容器")
       .organization(JHipsterModuleOrganization.SPRINGBOOT_DEPENDENCY)
       .tags("server", "spring", "spring-boot", "database")
       .factory(applicationService::build);
