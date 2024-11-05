@@ -22,7 +22,7 @@ class SampleCassandraPersistenceModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SAMPLE_CASSANDRA_PERSISTENCE)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().build())
-      .apiDoc("Sample Feature", "Add Cassandra persistence for sample feature")
+      .apiDoc("Sample Feature", "为示例功能添加Cassandra持久化")
       .organization(
         JHipsterModuleOrganization.builder()
           .feature(SAMPLE_PERSISTENCE)

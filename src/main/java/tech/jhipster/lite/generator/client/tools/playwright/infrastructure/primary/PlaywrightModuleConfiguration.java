@@ -21,7 +21,7 @@ class PlaywrightModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(PLAYWRIGHT_COMPONENT_TESTS)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().build())
-      .apiDoc("E2E", "Configure frontend component tests using Playwright")
+      .apiDoc("E2E", "使用Playwright配置前端组件测试")
       .organization(JHipsterModuleOrganization.builder().feature(FRONTEND_COMPONENT_TESTS).addDependency(CLIENT_CORE).build())
       .tags("client", "test", "playwright", "frontend")
       .factory(playwright::buildComponentTestsModule);
@@ -32,7 +32,7 @@ class PlaywrightModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(PLAYWRIGHT_E2E)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().build())
-      .apiDoc("E2E", "Configure E2E tests using Playwright")
+      .apiDoc("E2E", "使用Playwright配置E2E测试")
       .organization(JHipsterModuleOrganization.builder().feature(E2E_TESTS).addDependency(CLIENT_CORE).build())
       .tags("client", "test", "playwright", "e2e")
       .factory(playwright::buildE2ETestsModule);

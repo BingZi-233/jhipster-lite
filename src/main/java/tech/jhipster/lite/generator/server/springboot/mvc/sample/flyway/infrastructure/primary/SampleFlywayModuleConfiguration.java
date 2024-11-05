@@ -22,7 +22,7 @@ class SampleFlywayModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SAMPLE_POSTGRESQL_FLYWAY_CHANGELOG)
       .withoutProperties()
-      .apiDoc("Sample Feature", "Add postgresql flyway changelog for sample feature")
+      .apiDoc("Sample Feature", "为示例功能添加postgresql flyway变更日志")
       .organization(
         JHipsterModuleOrganization.builder()
           .feature(SAMPLE_SCHEMA)
@@ -40,7 +40,7 @@ class SampleFlywayModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SAMPLE_NOT_POSTGRESQL_FLYWAY_CHANGELOG)
       .withoutProperties()
-      .apiDoc("Sample Feature", "Add not postgresql flyway changelog for sample feature")
+      .apiDoc("Sample Feature", "为示例功能添加非PostgreSQL的Flyway变更日志")
       .organization(JHipsterModuleOrganization.builder().feature(SAMPLE_SCHEMA).addDependency(FLYWAY).addDependency(SAMPLE_FEATURE).build())
       .tags("server")
       .factory(sampleFlyway::buildNotPostgresqlModule);

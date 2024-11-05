@@ -19,7 +19,7 @@ class SampleLiquibaseModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SAMPLE_LIQUIBASE_CHANGELOG)
       .withoutProperties()
-      .apiDoc("Sample Feature", "Add liquibase changelog for sample feature")
+      .apiDoc("Sample Feature", "为示例功能添加liquibase变更日志")
       .organization(
         JHipsterModuleOrganization.builder().feature(SAMPLE_SCHEMA).addDependency(LIQUIBASE).addDependency(SAMPLE_FEATURE).build()
       )

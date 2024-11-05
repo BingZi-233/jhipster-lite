@@ -22,7 +22,7 @@ class ReactCoreModulesConfiguration {
     return JHipsterModuleResource.builder()
       .slug(REACT_CORE)
       .propertiesDefinition(properties())
-      .apiDoc("Frontend - React", "Add React+Vite with minimal CSS")
+      .apiDoc("Frontend - React", "添加React+Vite，配以最少的CSS")
       .organization(JHipsterModuleOrganization.builder().feature(CLIENT_CORE).addDependency(TYPESCRIPT).addDependency(PRETTIER).build())
       .tags("client", REACT)
       .factory(react::buildModule);

@@ -28,7 +28,7 @@ class KafkaModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().addSpringConfigurationFormat().build()
       )
-      .apiDoc(TAG, "Add Kafka dependencies, with testcontainers")
+      .apiDoc(TAG, "添加Kafka依赖项，使用testcontainers")
       .organization(JHipsterModuleOrganization.builder().addDependency(SPRING_BOOT).build())
       .tags(SERVER, SPRING, SPRING_BOOT_TAG, BROKER)
       .factory(kafkaApplicationService::init);
@@ -41,7 +41,7 @@ class KafkaModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().addSpringConfigurationFormat().build()
       )
-      .apiDoc("Sample Feature", "Add sample Kafka producer and consumer")
+      .apiDoc("Sample Feature", "添加示例Kafka生产者和消费者")
       .organization(kafkaDependency())
       .tags(SERVER, SPRING, SPRING_BOOT_TAG, BROKER)
       .factory(kafkaApplicationService::addSampleProducerConsumer);
@@ -52,7 +52,7 @@ class KafkaModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SPRING_BOOT_KAFKA_AKHQ)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addIndentation().build())
-      .apiDoc(TAG, "Add AKHQ")
+      .apiDoc(TAG, "添加AKHQ")
       .organization(kafkaDependency())
       .tags(SERVER, SPRING, SPRING_BOOT_TAG, BROKER)
       .factory(kafkaApplicationService::addAkhq);

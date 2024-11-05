@@ -15,7 +15,7 @@ class GitpodModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(GITPOD)
       .withoutProperties()
-      .apiDoc("Development environment", "Init Gitpod configuration files")
+      .apiDoc("Development environment", "初始化Gitpod配置文件")
       .standalone()
       .tags("setup", "gitpod")
       .factory(gitPods::buildModule);

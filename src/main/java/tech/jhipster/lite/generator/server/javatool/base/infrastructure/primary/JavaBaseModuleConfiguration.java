@@ -18,7 +18,7 @@ class JavaBaseModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JHLiteModuleSlug.JAVA_BASE)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().build())
-      .apiDoc("Java", "Add Base classes and Error domain to project")
+      .apiDoc("Java", "将基础类和错误域添加到项目中")
       .organization(JHipsterModuleOrganization.builder().addDependency(JAVA_BUILD_TOOL).build())
       .tags("server")
       .factory(javaBase::build);

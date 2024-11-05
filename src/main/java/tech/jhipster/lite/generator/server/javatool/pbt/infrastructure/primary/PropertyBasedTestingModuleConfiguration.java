@@ -17,7 +17,7 @@ class PropertyBasedTestingModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JHLiteModuleSlug.JQWIK)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().build())
-      .apiDoc("Advanced testing", "Add jqwik library for Property Based Testing")
+      .apiDoc("Advanced testing", "添加jqwik库以进行基于属性的测试")
       .organization(JHipsterModuleOrganization.builder().addDependency(JHLiteFeatureSlug.JAVA_BUILD_TOOL).build())
       .tags("server", "testing")
       .factory(propertyBasedTesting::build);

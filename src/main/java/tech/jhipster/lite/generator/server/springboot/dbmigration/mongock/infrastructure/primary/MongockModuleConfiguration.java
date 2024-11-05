@@ -20,7 +20,7 @@ class MongockModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().addSpringConfigurationFormat().build()
       )
-      .apiDoc("Spring Boot - Database Migration", "Add Mongock")
+      .apiDoc("Spring Boot - Database Migration", "添加Mongock")
       .organization(JHipsterModuleOrganization.builder().addDependency(MONGODB).build())
       .tags("server", "spring", "spring-boot", "database", "migration", "mongo-db")
       .factory(mongock::buildModule);

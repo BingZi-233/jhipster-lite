@@ -26,7 +26,7 @@ class SpringBootCoreModuleConfiguration {
           .addSpringConfigurationFormat()
           .build()
       )
-      .apiDoc("Spring Boot", "Init Spring Boot project with dependencies, App, and properties")
+      .apiDoc("Spring Boot", "初始化Spring Boot项目，包含依赖、应用程序和属性")
       .organization(JHipsterModuleOrganization.builder().addDependency(JAVA_BUILD_TOOL).addDependency(JAVA_BASE).build())
       .tags("server", "spring", "spring-boot")
       .factory(springBoot::buildModule);

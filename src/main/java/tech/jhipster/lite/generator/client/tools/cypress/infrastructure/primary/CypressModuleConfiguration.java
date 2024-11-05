@@ -21,7 +21,7 @@ class CypressModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(CYPRESS_COMPONENT_TESTS)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addIndentation().build())
-      .apiDoc("Frontend - Component tests", "Setup frontend component tests using Cypress")
+      .apiDoc("Frontend - Component tests", "使用Cypress设置前端组件测试")
       .organization(JHipsterModuleOrganization.builder().feature(FRONTEND_COMPONENT_TESTS).addDependency(CLIENT_CORE).build())
       .tags("client", "test", "cypress", "frontend")
       .factory(cypress::buildComponentTestsModule);
@@ -32,7 +32,7 @@ class CypressModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(CYPRESS_E2E)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addIndentation().build())
-      .apiDoc("E2E", "Setup E2E tests using Cypress")
+      .apiDoc("E2E", "使用Cypress设置E2E测试")
       .organization(JHipsterModuleOrganization.builder().feature(E2E_TESTS).addDependency(CLIENT_CORE).build())
       .tags("client", "test", "cypress", "e2e")
       .factory(cypress::buildE2ETestsModule);

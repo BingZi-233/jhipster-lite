@@ -26,7 +26,7 @@ class Hibernate2ndLevelCacheModuleConfiguration {
           .addSpringConfigurationFormat()
           .build()
       )
-      .apiDoc("Spring Boot - Database", "Add Hibernate second level cache configuration to project")
+      .apiDoc("Spring Boot - Database", "将Hibernate二级缓存配置添加到项目中")
       .organization(JHipsterModuleOrganization.builder().addDependency(JCACHE).addDependency(JPA_PERSISTENCE).build())
       .tags("server", "spring", "spring-boot", "database", "hibernate", "cache")
       .factory(hibernate2ndLevelCacheApplicationService::build);

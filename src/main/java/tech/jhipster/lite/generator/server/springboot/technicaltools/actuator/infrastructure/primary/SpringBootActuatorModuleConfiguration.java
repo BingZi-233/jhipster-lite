@@ -20,7 +20,7 @@ class SpringBootActuatorModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().addSpringConfigurationFormat().build()
       )
-      .apiDoc("Spring Boot", "Add Spring Boot Actuator to the project")
+      .apiDoc("Spring Boot", "将Spring Boot Actuator添加到项目中")
       .organization(JHipsterModuleOrganization.builder().addDependency(SPRING_SERVER).build())
       .tags("server", "spring", "spring-boot")
       .factory(actuatorModule::buildSpringBootActuatorModule);

@@ -21,7 +21,7 @@ class MavenModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(MAVEN_JAVA)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().addProjectName().build())
-      .apiDoc("Build Tool", "Init Maven project with pom.xml")
+      .apiDoc("Build Tool", "初始化Maven项目，使用pom.xml")
       .organization(JHipsterModuleOrganization.builder().feature(JAVA_BUILD_TOOL).addDependency(INIT).build())
       .tags("buildtool", "test")
       .factory(maven::buildMavenModule);
@@ -32,7 +32,7 @@ class MavenModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(MAVEN_WRAPPER)
       .withoutProperties()
-      .apiDoc("Build Tool", "Add maven wrapper")
+      .apiDoc("Build Tool", "添加maven包装器")
       .organization(JHipsterModuleOrganization.builder().feature(JAVA_BUILD_TOOL_WRAPPER).addDependency(MAVEN_JAVA).build())
       .tags("buildtool", "test")
       .factory(maven::buildMavenWrapperModule);

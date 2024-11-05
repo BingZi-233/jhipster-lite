@@ -21,7 +21,7 @@ class GradleModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(GRADLE_JAVA)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().addProjectName().build())
-      .apiDoc("Build Tool", "Init Gradle project with kotlin DSL")
+      .apiDoc("Build Tool", "使用kotlin DSL初始化Gradle项目")
       .organization(JHipsterModuleOrganization.builder().feature(JAVA_BUILD_TOOL).addDependency(INIT).build())
       .tags("buildtool", "test")
       .factory(gradle::buildGradleModule);
@@ -32,7 +32,7 @@ class GradleModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(GRADLE_WRAPPER)
       .withoutProperties()
-      .apiDoc("Build Tool", "Add gradle wrapper")
+      .apiDoc("Build Tool", "添加gradle包装器")
       .organization(JHipsterModuleOrganization.builder().feature(JAVA_BUILD_TOOL_WRAPPER).addDependency(GRADLE_JAVA).build())
       .tags("buildtool", "test")
       .factory(gradle::buildGradleWrapperModule);

@@ -21,7 +21,7 @@ class LiquibaseModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(LIQUIBASE)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addIndentation().addSpringConfigurationFormat().build())
-      .apiDoc("Spring Boot - Database Migration", "Add Liquibase")
+      .apiDoc("Spring Boot - Database Migration", "添加Liquibase")
       .organization(
         JHipsterModuleOrganization.builder().feature(DATABASE_MIGRATION).addDependency(JPA_PERSISTENCE).addDependency(LOGS_SPY).build()
       )
@@ -36,7 +36,7 @@ class LiquibaseModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addIndentation().addBasePackage().addSpringConfigurationFormat().build()
       )
-      .apiDoc("Spring Boot - Database Migration", "Support updating the database asynchronously with Liquibase")
+      .apiDoc("Spring Boot - Database Migration", "支持使用Liquibase异步更新数据库")
       .organization(JHipsterModuleOrganization.builder().addDependency(LIQUIBASE).build())
       .tags("server", "spring", "spring-boot", "database", "migration", "liquibase")
       .factory(liquibase::buildAsyncModule);

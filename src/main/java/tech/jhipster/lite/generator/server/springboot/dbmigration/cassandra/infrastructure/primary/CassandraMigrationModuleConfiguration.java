@@ -18,7 +18,7 @@ class CassandraMigrationModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(CASSANDRA_MIGRATION)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().build())
-      .apiDoc("Spring Boot - Database Migration", "Add Cassandra Migration tools")
+      .apiDoc("Spring Boot - Database Migration", "添加Cassandra迁移工具")
       .organization(JHipsterModuleOrganization.builder().addDependency(CASSANDRA).build())
       .tags("server", "spring", "spring-boot", "database", "migration", "cassandra")
       .factory(cassandraMigration::buildModule);

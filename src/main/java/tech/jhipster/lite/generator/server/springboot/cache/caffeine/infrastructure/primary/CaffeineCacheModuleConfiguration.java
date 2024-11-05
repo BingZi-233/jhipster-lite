@@ -16,7 +16,7 @@ class CaffeineCacheModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JHLiteModuleSlug.CAFFEINE_CACHE)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().build())
-      .apiDoc("Spring Boot - Cache", "Add caffeine cache")
+      .apiDoc("Spring Boot - Cache", "添加咖啡因缓存")
       .organization(JHipsterModuleOrganization.builder().addDependency(JHLiteModuleSlug.SPRING_BOOT_CACHE).build())
       .tags("server", "spring", "spring-boot", "cache")
       .factory(caffeineCaches::buildModule);

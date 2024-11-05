@@ -17,7 +17,7 @@ class JMoleculesModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JMOLECULES)
       .withoutProperties()
-      .apiDoc("Documentation", "Add support for jMolecules documentation annotations")
+      .apiDoc("Documentation", "添加对jMolecules文档注释的支持")
       .organization(JHipsterModuleOrganization.builder().addDependency(JHLiteFeatureSlug.JAVA_BUILD_TOOL).build())
       .tags("server", "documentation")
       .factory(jMolecules::buildModule);

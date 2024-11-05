@@ -15,7 +15,7 @@ class InfinitestModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(INFINITEST_FILTERS)
       .withoutProperties()
-      .apiDoc("Development environment", "Add filter for infinitest, the continuous test runner")
+      .apiDoc("Development environment", "为infinitest添加过滤器，这是一个持续测试运行器")
       .standalone()
       .tags("server", "init", "test")
       .factory(infinitest::build);

@@ -22,7 +22,7 @@ class SpringDocOktaModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().addSpringConfigurationFormat().build()
       )
-      .apiDoc("Spring Boot - API Documentation", "Add Okta authentication for springdoc")
+      .apiDoc("Spring Boot - API Documentation", "为springdoc添加Okta认证")
       .organization(
         JHipsterModuleOrganization.builder()
           .feature(OAUTH_PROVIDER_SPRINGDOC)

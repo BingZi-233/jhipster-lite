@@ -17,7 +17,7 @@ class TsPaginationDomainModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JHLiteModuleSlug.TS_PAGINATION_DOMAIN)
       .withoutProperties()
-      .apiDoc("Pagination", "Add webapp domain for pagination")
+      .apiDoc("Pagination", "为分页添加webapp域")
       .organization(JHipsterModuleOrganization.builder().addDependency(CLIENT_CORE).build())
       .tags("client", "webapp", "frontend")
       .factory(tsPaginationDomain::buildModule);

@@ -18,7 +18,7 @@ class JavaMemoizersModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JAVA_MEMOIZERS)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().build())
-      .apiDoc("Java", "Add simple memoizers factory")
+      .apiDoc("Java", "添加简单的备忘录工厂")
       .organization(JHipsterModuleOrganization.builder().addDependency(JAVA_BASE).build())
       .tags("server")
       .factory(javaMemoizers::buildModule);

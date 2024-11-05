@@ -19,7 +19,7 @@ class CassandraModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().addSpringConfigurationFormat().build()
       )
-      .apiDoc("Spring Boot - Database", "Add Cassandra drivers and dependencies")
+      .apiDoc("Spring Boot - Database", "添加Cassandra驱动和依赖")
       .organization(JHipsterModuleOrganization.SPRINGBOOT_DEPENDENCY)
       .tags("server", "spring", "spring-boot", "database")
       .factory(cassandra::buildModule);

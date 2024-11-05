@@ -29,7 +29,7 @@ class CucumberModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SPRING_BOOT_CUCUMBER_MVC)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().addProjectBaseName().build())
-      .apiDoc(SPRING_BOOT_COMPONENT_TESTS_API_GROUP, "Add Cucumber integration for Spring MVC to project")
+      .apiDoc(SPRING_BOOT_COMPONENT_TESTS_API_GROUP, "为项目添加Cucumber集成以支持Spring MVC")
       .organization(JHipsterModuleOrganization.builder().feature(SPRING_BOOT_CUCUMBER).addDependency(SPRING_MVC_SERVER).build())
       .tags(SERVER_TAG, SPRING_TAG, SPRING_BOOT_TAG, TEST_TAG)
       .factory(cucumber::buildInitializationModule);
@@ -40,7 +40,7 @@ class CucumberModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SPRING_BOOT_CUCUMBER_WEBFLUX)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().addProjectBaseName().build())
-      .apiDoc(SPRING_BOOT_COMPONENT_TESTS_API_GROUP, "Add Cucumber integration for Webflux to project")
+      .apiDoc(SPRING_BOOT_COMPONENT_TESTS_API_GROUP, "为项目添加Cucumber集成以支持Webflux")
       .organization(JHipsterModuleOrganization.builder().feature(SPRING_BOOT_CUCUMBER).addDependency(SPRING_BOOT_WEBFLUX_NETTY).build())
       .tags(SERVER_TAG, SPRING_TAG, SPRING_BOOT_TAG, TEST_TAG)
       .factory(cucumber::buildInitializationModule);
@@ -51,7 +51,7 @@ class CucumberModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SPRING_BOOT_CUCUMBER_JPA_RESET)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().build())
-      .apiDoc(SPRING_BOOT_COMPONENT_TESTS_API_GROUP, "Add jpa reset for cucumber")
+      .apiDoc(SPRING_BOOT_COMPONENT_TESTS_API_GROUP, "为cucumber添加jpa重置")
       .organization(JHipsterModuleOrganization.builder().addDependency(SPRING_BOOT_CUCUMBER).addDependency(JPA_PERSISTENCE).build())
       .tags(SERVER_TAG, SPRING_TAG, SPRING_BOOT_TAG, TEST_TAG)
       .factory(cucumber::buildJpaResetModule);

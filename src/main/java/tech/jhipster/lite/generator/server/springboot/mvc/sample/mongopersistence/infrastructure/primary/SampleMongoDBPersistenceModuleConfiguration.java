@@ -20,7 +20,7 @@ class SampleMongoDBPersistenceModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(SAMPLE_MONGODB_PERSISTENCE)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().build())
-      .apiDoc("Sample Feature", "Add MongoDB persistence for sample feature")
+      .apiDoc("Sample Feature", "为示例功能添加MongoDB持久化")
       .organization(
         JHipsterModuleOrganization.builder().feature(SAMPLE_PERSISTENCE).addDependency(SAMPLE_FEATURE).addDependency(MONGOCK).build()
       )

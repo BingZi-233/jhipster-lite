@@ -25,7 +25,7 @@ class OAuth2Auth0ModuleConfiguration {
       .propertiesDefinition(initPropertiesDefinition())
       .apiDoc(
         "Spring Boot - MVC - Security",
-        "Add a Spring Security: OAuth 2.0 / OIDC Authentication / Auth0 Provider (stateful, works with Keycloak and Auth0)"
+        "添加 Spring Security：OAuth 2.0 / OIDC 身份验证 / Auth0 提供程序（有状态，与 Keycloak 和 Auth0 一起使用）"
       )
       .organization(JHipsterModuleOrganization.builder().feature(OAUTH_PROVIDER).addDependency(SPRING_BOOT_OAUTH_2).build())
       .tags("server", "spring", "spring-boot", AUTHENTICATION, "auth0")

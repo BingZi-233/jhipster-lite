@@ -46,10 +46,7 @@ class OAuth2ModuleConfiguration {
           )
           .build()
       )
-      .apiDoc(
-        "Spring Boot - MVC - Security",
-        "Add a Spring Security: OAuth 2.0 / OIDC Authentication (stateful, works with Keycloak and Okta)"
-      )
+      .apiDoc("Spring Boot - MVC - Security", "添加 Spring Security：OAuth 2.0 / OIDC 身份验证（有状态，适用于 Keycloak 和 Okta）")
       .organization(
         JHipsterModuleOrganization.builder()
           .feature(AUTHENTICATION)

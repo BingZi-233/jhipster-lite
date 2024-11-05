@@ -16,7 +16,7 @@ class InitModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(INIT)
       .propertiesDefinition(initPropertiesDefinition())
-      .apiDoc("Init", "Init project")
+      .apiDoc("Init", "初始化项目")
       .standalone()
       .tags("server", "init")
       .factory(inits::buildModule);

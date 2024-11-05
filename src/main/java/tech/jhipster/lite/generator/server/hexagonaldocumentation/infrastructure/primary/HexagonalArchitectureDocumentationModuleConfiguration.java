@@ -17,7 +17,7 @@ class HexagonalArchitectureDocumentationModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(APPLICATION_SERVICE_HEXAGONAL_ARCHITECTURE_DOCUMENTATION)
       .withoutProperties()
-      .apiDoc("Documentation", "Add documentation for hexagonal architecture")
+      .apiDoc("Documentation", "为六边形架构添加文档")
       .standalone()
       .tags("server", "documentation")
       .factory(hexagonalArchitectureDocumentations::buildModule);

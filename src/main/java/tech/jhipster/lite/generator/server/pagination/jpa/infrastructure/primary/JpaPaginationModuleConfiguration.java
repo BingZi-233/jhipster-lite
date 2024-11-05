@@ -19,7 +19,7 @@ class JpaPaginationModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JPA_PAGINATION)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().build())
-      .apiDoc("Pagination", "Add utility class for JPA pagination")
+      .apiDoc("Pagination", "为JPA分页添加实用程序类")
       .organization(JHipsterModuleOrganization.builder().addDependency(PAGINATION_DOMAIN).addDependency(JPA_PERSISTENCE).build())
       .tags("server")
       .factory(jpaPagination::buildModule);

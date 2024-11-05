@@ -17,7 +17,7 @@ class TsLoaderModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JHLiteModuleSlug.TS_LOADER)
       .withoutProperties()
-      .apiDoc("Frontend", "Helper class to represent loading states")
+      .apiDoc("Frontend", "辅助类用于表示加载状态")
       .organization(JHipsterModuleOrganization.builder().addDependency(CLIENT_CORE).build())
       .tags("client")
       .factory(tsLoader::buildModule);

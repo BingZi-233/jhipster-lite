@@ -27,7 +27,7 @@ class FrontendJavaBuildToolModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(FRONTEND_MAVEN_PLUGIN)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().addIndentation().build())
-      .apiDoc(FRONTEND_JAVA_PLUGIN, "Add Frontend Maven Plugin")
+      .apiDoc(FRONTEND_JAVA_PLUGIN, "添加前端Maven插件")
       .organization(
         JHipsterModuleOrganization.builder()
           .feature(FRONTEND_JAVA_BUILD_TOOL_PLUGIN)
@@ -45,7 +45,7 @@ class FrontendJavaBuildToolModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(FRONTEND_MAVEN_PLUGIN_CACHE)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.EMPTY)
-      .apiDoc(FRONTEND_JAVA_PLUGIN, "Add cache - by computing resources checksum - to avoid rebuilding frontend on successive maven builds")
+      .apiDoc(FRONTEND_JAVA_PLUGIN, "通过计算资源的校验和添加缓存，以避免在连续的maven构建中重建前端。")
       .organization(JHipsterModuleOrganization.builder().addDependency(FRONTEND_MAVEN_PLUGIN).build())
       .tags(TAGS)
       .factory(frontendJavaBuildTool::buildFrontendMavenCacheModule);
@@ -56,7 +56,7 @@ class FrontendJavaBuildToolModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(NODE_GRADLE_PLUGIN)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().addIndentation().build())
-      .apiDoc(FRONTEND_JAVA_PLUGIN, "Add node-gradle plugin for building frontend with Gradle")
+      .apiDoc(FRONTEND_JAVA_PLUGIN, "添加node-gradle插件以使用Gradle构建前端")
       .organization(
         JHipsterModuleOrganization.builder()
           .feature(FRONTEND_JAVA_BUILD_TOOL_PLUGIN)

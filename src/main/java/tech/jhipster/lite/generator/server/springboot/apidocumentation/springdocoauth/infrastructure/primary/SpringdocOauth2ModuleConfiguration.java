@@ -22,7 +22,7 @@ class SpringdocOauth2ModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().addSpringConfigurationFormat().build()
       )
-      .apiDoc("Spring Boot - API Documentation", "Add OAuth2 authentication for springdoc")
+      .apiDoc("Spring Boot - API Documentation", "为springdoc添加OAuth2认证")
       .organization(
         JHipsterModuleOrganization.builder()
           .feature(AUTHENTICATION_SPRINGDOC)

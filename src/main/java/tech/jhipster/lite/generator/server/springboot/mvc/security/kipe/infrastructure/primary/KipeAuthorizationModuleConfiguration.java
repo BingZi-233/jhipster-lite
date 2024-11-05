@@ -17,7 +17,7 @@ class KipeAuthorizationModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JHLiteModuleSlug.KIPE_AUTHORIZATION)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectName().build())
-      .apiDoc("Spring Boot - MVC - Security", "Ease authorization matrices definition")
+      .apiDoc("Spring Boot - MVC - Security", "简化授权矩阵的定义")
       .organization(JHipsterModuleOrganization.builder().addDependency(JHLiteFeatureSlug.AUTHENTICATION).build())
       .tags("server", "spring", "spring-boot", "authentication")
       .factory(kipe::buildKipeAuthorizations);

@@ -22,7 +22,7 @@ class SpringDocAuth0ModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addIndentation().addSpringConfigurationFormat().build()
       )
-      .apiDoc("Spring Boot - API Documentation", "Add Auth0 authentication for springdoc")
+      .apiDoc("Spring Boot - API Documentation", "为springdoc添加Auth0认证")
       .organization(
         JHipsterModuleOrganization.builder()
           .feature(OAUTH_PROVIDER_SPRINGDOC)

@@ -24,7 +24,7 @@ class GitHubActionsModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(GITHUB_ACTIONS_MAVEN)
       .withoutProperties()
-      .apiDoc(CONTINUOUS_INTEGRATION_GROUP_DOC, "Add GitHub Actions for Maven Build")
+      .apiDoc(CONTINUOUS_INTEGRATION_GROUP_DOC, "为Maven构建添加GitHub Actions")
       .organization(JHipsterModuleOrganization.builder().feature(GITHUB_ACTIONS).addDependency(MAVEN_JAVA).build())
       .tags(CI_TAG, GITHUB_TAG)
       .factory(gitHubActions::buildGitHubActionsMavenModule);
@@ -35,7 +35,7 @@ class GitHubActionsModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(GITHUB_ACTIONS_GRADLE)
       .withoutProperties()
-      .apiDoc(CONTINUOUS_INTEGRATION_GROUP_DOC, "Add GitHub Actions for Gradle Build")
+      .apiDoc(CONTINUOUS_INTEGRATION_GROUP_DOC, "为Gradle构建添加GitHub Actions")
       .organization(JHipsterModuleOrganization.builder().feature(GITHUB_ACTIONS).addDependency(GRADLE_JAVA).build())
       .tags(CI_TAG, GITHUB_TAG)
       .factory(gitHubActions::buildGitHubActionsGradleModule);

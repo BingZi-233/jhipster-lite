@@ -17,7 +17,7 @@ class KipeExpressionModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JHLiteModuleSlug.KIPE_EXPRESSION)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addBasePackage().build())
-      .apiDoc("Spring Boot - MVC - Security", "Create a new security expression for spring security: can('action', #element)")
+      .apiDoc("Spring Boot - MVC - Security", "为spring security创建一个新的安全表达式：can('action', #element)")
       .organization(JHipsterModuleOrganization.builder().addDependency(JHLiteFeatureSlug.AUTHENTICATION).build())
       .tags("server", "spring", "spring-boot", "authentication")
       .factory(kipe::buildKipeExpressions);

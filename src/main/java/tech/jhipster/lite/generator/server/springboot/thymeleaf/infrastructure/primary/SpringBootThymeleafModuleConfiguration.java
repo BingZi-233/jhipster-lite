@@ -20,7 +20,7 @@ class SpringBootThymeleafModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().addSpringConfigurationFormat().build()
       )
-      .apiDoc("Spring Boot - Thymeleaf", "Add Spring Boot Thymeleaf to the project")
+      .apiDoc("Spring Boot - Thymeleaf", "将Spring Boot Thymeleaf添加到项目中")
       .organization(JHipsterModuleOrganization.builder().addDependency(SPRING_SERVER).build())
       .tags("server", "spring", "spring-boot")
       .factory(thymeleafModule::buildSpringBootThymeleafModule);

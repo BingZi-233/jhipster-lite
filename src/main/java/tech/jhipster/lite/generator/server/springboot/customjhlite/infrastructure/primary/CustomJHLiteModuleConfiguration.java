@@ -17,7 +17,7 @@ class CustomJHLiteModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(CUSTOM_JHLITE)
       .propertiesDefinition(propertiesDefinition())
-      .apiDoc("JHLite", "Create a custom JHLite instance to build custom modules")
+      .apiDoc("JHLite", "创建一个自定义的JHLite实例以构建自定义模块")
       .organization(JHipsterModuleOrganization.SPRINGBOOT_DEPENDENCY)
       .tags("server")
       .factory(customJHLite::buildModule);

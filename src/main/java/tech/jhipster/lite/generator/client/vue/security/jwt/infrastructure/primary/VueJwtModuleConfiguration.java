@@ -18,7 +18,7 @@ class VueJwtModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(VUE_JWT)
       .propertiesDefinition(JHipsterModulePropertiesDefinition.builder().addIndentation().build())
-      .apiDoc("Vue", "Add JWT authentication to Vue")
+      .apiDoc("Vue", "为Vue添加JWT认证")
       .organization(JHipsterModuleOrganization.builder().feature(VUE_AUTHENTICATION).addDependency(VUE_CORE).build())
       .tags("client", "vue", "auth", "jwt")
       .factory(jwt::buildModule);

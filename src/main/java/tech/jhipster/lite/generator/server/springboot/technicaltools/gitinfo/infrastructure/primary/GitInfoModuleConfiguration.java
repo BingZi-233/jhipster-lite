@@ -20,7 +20,7 @@ class GitInfoModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().addSpringConfigurationFormat().build()
       )
-      .apiDoc("Spring Boot - Tools", "Injecting Git Information into Spring")
+      .apiDoc("Spring Boot - Tools", "将Git信息注入到Spring中")
       .organization(JHipsterModuleOrganization.builder().addDependency(SPRING_BOOT_ACTUATOR).build())
       .tags("server", "spring", "git", "git-information")
       .factory(gitInfoModule::buildGitInfoModule);

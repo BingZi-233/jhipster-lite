@@ -19,7 +19,7 @@ class JacocoModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JACOCO)
       .withoutProperties()
-      .apiDoc("Java", "Add JaCoCo for code coverage reporting")
+      .apiDoc("Java", "为代码覆盖率报告添加JaCoCo")
       .organization(JHipsterModuleOrganization.builder().feature(CODE_COVERAGE_JAVA).addDependency(JAVA_BUILD_TOOL).build())
       .tags("server", "tools", "coverage")
       .factory(jacoco::buildJacocoModule);
@@ -30,7 +30,7 @@ class JacocoModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JACOCO_WITH_MIN_COVERAGE_CHECK)
       .withoutProperties()
-      .apiDoc("Java", "Add JaCoCo for code coverage reporting and 100% coverage check")
+      .apiDoc("Java", "添加JaCoCo以进行代码覆盖率报告和100%覆盖率检查")
       .organization(JHipsterModuleOrganization.builder().feature(CODE_COVERAGE_JAVA).addDependency(JAVA_BUILD_TOOL).build())
       .tags("server", "tools", "coverage")
       .factory(jacoco::buildJacocoWithMinCoverageCheckModule);

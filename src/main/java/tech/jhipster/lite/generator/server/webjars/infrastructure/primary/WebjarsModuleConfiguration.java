@@ -26,7 +26,7 @@ class WebjarsModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().addSpringConfigurationFormat().build()
       )
-      .apiDoc(WEBJARS_GROUP, "Add webjars locator to the project")
+      .apiDoc(WEBJARS_GROUP, "将webjars定位器添加到项目中")
       .organization(JHipsterModuleOrganization.builder().addDependency(SPRING_BOOT_THYMELEAF).build())
       .tags(SERVER_TAG, WEB_TAG)
       .factory(webjarsModule::buildWebjarsLocatorModule);
@@ -39,7 +39,7 @@ class WebjarsModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().addSpringConfigurationFormat().build()
       )
-      .apiDoc(WEBJARS_GROUP, "Add HTMX webjar to the project")
+      .apiDoc(WEBJARS_GROUP, "将HTMX webjar添加到项目中")
       .organization(JHipsterModuleOrganization.builder().addDependency(WEBJARS_LOCATOR).build())
       .tags(SERVER_TAG, WEB_TAG)
       .factory(webjarsModule::buildWebjarsHtmxModule);
@@ -52,7 +52,7 @@ class WebjarsModuleConfiguration {
       .propertiesDefinition(
         JHipsterModulePropertiesDefinition.builder().addBasePackage().addProjectBaseName().addSpringConfigurationFormat().build()
       )
-      .apiDoc(WEBJARS_GROUP, "Add alpine.js webjar to the project")
+      .apiDoc(WEBJARS_GROUP, "将alpine.js webjar添加到项目中")
       .organization(JHipsterModuleOrganization.builder().addDependency(WEBJARS_LOCATOR).build())
       .tags(SERVER_TAG, WEB_TAG)
       .factory(webjarsModule::buildWebjarsAlpineJSModule);

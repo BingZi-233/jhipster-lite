@@ -14,7 +14,7 @@ class FrontHexagonalDocumentationModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(JHLiteModuleSlug.FRONT_HEXAGONAL_ARCHITECTURE)
       .withoutProperties()
-      .apiDoc("Frontend", "Add front hexagonal architecture documentation")
+      .apiDoc("Frontend", "添加前端六边形架构文档")
       .standalone()
       .tags("client", "documentation")
       .factory(documentation::buildModule);
