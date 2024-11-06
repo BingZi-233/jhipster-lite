@@ -19,11 +19,11 @@
   </button>
   <div class="jhlite-landscape-preset-configuration--content" v-if="isPresetConfigurationOpen">
     <div class="jhlite-field--label">
-      <label for="preset-configuration" class="jhlite-label">Presets Configurations</label>
+      <label for="preset-configuration" class="jhlite-label">预设配置</label>
     </div>
     <div class="jhlite-landscape-preset-configuration--field">
       <select id="preset-configuration" @change="handlePresetChange" :value="selectedPresetName" class="jhlite-select">
-        <option value="">Select a preset...</option>
+        <option value="">选择预设...</option>
         <option v-for="preset in presets" :key="preset.name" :value="preset.name">{{ preset.name }}</option>
       </select>
     </div>

@@ -1,11 +1,11 @@
 <div class="jhipster-module-properties jhlite-vertical-space -paragraph">
   <div class="jhlite-vertical-space--line">
-    <h2 class="jhipster-modules-properties-form--properties-title">Properties</h2>
+    <h2 class="jhipster-modules-properties-form--properties-title">属性</h2>
   </div>
   <div class="jhlite-vertical-space--line">
     <div class="jhlite-field">
       <div class="jhlite-field--label">
-        <label for="folder-path" class="jhlite-input">Project folder</label>
+        <label for="folder-path" class="jhlite-input">项目文件夹</label>
       </div>
       <div class="jhlite-field--field">
         <input
@@ -60,9 +60,7 @@
           <option value="false" :selected="parameters.get(property.key) === false">No</option>
         </select>
       </div>
-      <div class="jhlite-field--optional" :data-selector="`parameter-${property.key}-optional-marker`" v-if="!property.mandatory">
-        Optional
-      </div>
+      <div class="jhlite-field--optional" :data-selector="`parameter-${property.key}-optional-marker`" v-if="!property.mandatory">可选</div>
     </div>
   </div>
   <div class="jhlite-vertical-space--line">
@@ -73,6 +71,6 @@
       data-selector="commit-module-application"
       checked="checked"
     />
-    <label for="commit-modules" class="jhipster-modules-properties-form--commit-modules-label">Commit module application</label>
+    <label for="commit-modules" class="jhipster-modules-properties-form--commit-modules-label">提交模块应用程序</label>
   </div>
 </div>

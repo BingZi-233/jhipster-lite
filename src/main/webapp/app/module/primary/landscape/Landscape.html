@@ -9,7 +9,7 @@
           @click="selectMode('COMPACTED')"
           data-selector="compacted-mode-button"
         >
-          Compacted
+          紧凑
         </button>
         <button
           class="jhlite-button-switch"
@@ -17,7 +17,7 @@
           @click="selectMode('EXTENDED')"
           data-selector="extended-mode-button"
         >
-          Extended
+          详细
         </button>
       </div>
     </div>
@@ -141,7 +141,7 @@
               @click="applyNewModules"
             >
               <IconVue name="play-circled" aria-label="Icon play circled" />
-              Apply new ({{selectedNewModulesCount()}})
+              应用新模块 ({{selectedNewModulesCount()}})
             </button>
           </div>
 
@@ -153,7 +153,7 @@
               @click="applyAllModules"
             >
               <IconVue name="play-circled" aria-label="Icon play circled" />
-              Apply selected ({{selectedModulesCount()}})
+              应用已选中 ({{selectedModulesCount()}})
             </button>
           </div>
         </ProjectActionsVue>
