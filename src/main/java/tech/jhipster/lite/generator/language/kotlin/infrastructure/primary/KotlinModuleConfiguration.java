@@ -18,7 +18,7 @@ public class KotlinModuleConfiguration {
     return JHipsterModuleResource.builder()
       .slug(GRADLE_KOTLIN)
       .withoutProperties()
-      .apiDoc("Extra Language", "Add Kotlin Language Supports")
+      .apiDoc("Extra Language", "添加 Kotlin 语言支持")
       .organization(JHipsterModuleOrganization.builder().feature(EXTRA_LANGUAGE).addDependency(GRADLE_JAVA).build())
       .tags("buildtool", "test")
       .factory(gradle::buildKotlinLanguageModule);
